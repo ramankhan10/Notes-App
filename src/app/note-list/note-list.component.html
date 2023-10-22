@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <ul class="note-list rounded">
+      <li
+        class="list-unstyled text-left rounded mb-4 p-4"
+        *ngFor="let notes of notes"
+      >
+        <button class="btn" (click)="show(notes.title)">
+          <div>
+            <h4>
+              {{ notes.title }}
+            </h4>
+          </div>
+          <div>
+            <p class="text-muted">
+              {{ notes.text }}
+            </p>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
