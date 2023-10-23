@@ -1,0 +1,39 @@
+<section>
+  <div class="container text-center">
+    <h2 class="mb-5">New Note</h2>
+
+    <form [formGroup]="addNoteForm" (ngSubmit)="addNote()">
+      <div>
+        <label class="mb-3" for="Title"
+          >Title :
+          <input
+            class="form-control"
+            id="Title"
+            type="text"
+            formControlName="title"
+          />
+        </label>
+      </div>
+
+      <div class="mb-3">
+        <label for="Text"
+          >Text :
+          <input
+            class="form-control"
+            id="Text"
+            type="text"
+            formControlName="text"
+          />
+        </label>
+      </div>
+
+      <button
+        class="btn btn-primary rounded-3 mb-5"
+        type="submit"
+        [disabled]="!addNoteForm.valid"
+      >
+        Add Text
+      </button>
+    </form>
+  </div>
+</section>
