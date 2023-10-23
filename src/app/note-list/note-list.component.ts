@@ -8,8 +8,4 @@ import { NOTES } from '../note';
 })
 export class NoteListComponent {
   notes = NOTES;
-
-  show(title: string) {
-    alert(title)
-  }
 }

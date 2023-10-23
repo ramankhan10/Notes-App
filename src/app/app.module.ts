@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { NoteListComponent } from './note-list/note-list.component';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NoteDetailComponent } from './note-detail/note-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NoteListComponent,
-    AddNoteComponent
+    AddNoteComponent,
+    NoteDetailComponent
   ],
   imports: [
     BrowserModule,

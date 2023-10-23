@@ -9,7 +9,7 @@
         class="list-unstyled text-left rounded mb-4 p-4"
         *ngFor="let notes of notes"
       >
-        <button class="btn" (click)="show(notes.title)">
+        <button class="btn" [routerLink]="['/note', notes.id]">
           <div>
             <h4>
               {{ notes.title }}

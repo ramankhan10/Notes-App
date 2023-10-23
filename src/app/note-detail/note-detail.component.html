@@ -1,0 +1,9 @@
+<section>
+  <div *ngIf="note" class="container m-4 p-4 rounded-3">
+    <h1 class="text-title">{{ note.title }}</h1>
+    <p class="text-id">ID: {{ note.id }}</p>
+    <p class="text-detail">{{ note.text }}</p>
+  </div>
+  <button routerLink="/" class="btn btn-primary mx-4">Back to List</button>
+  <button (click)="deleteNote()" routerLink="/" class="btn btn-danger mx-4">Delete</button>
+</section>
